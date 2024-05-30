@@ -27,7 +27,7 @@ $(NAME): $(OBJ)
 		@echo "$(BOLD)$(BLUE)🛠️ 🚧     Compiling project...     🚧🛠️$(RESET_COLOR)"
 		@echo "\n"
 		@$(CXX) $(CFLAGS) -o $(NAME) $(OBJ)
-		@echo "$(BOLD)$(GREEN)⚔️🪓🔫    violence ready to use    🔫🪓⚔️$(RESET_COLOR)"
+		@echo "$(BOLD)$(GREEN)⚔️ 🪓 🔪   violence ready to use    🔪 🪓 ⚔️$(RESET_COLOR)"
 
 $(DIR_OBJ):
 	@mkdir -p $(DIR_OBJ)
