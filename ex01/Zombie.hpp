@@ -6,7 +6,7 @@
 /*   By: gpeyre <gpeyre@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 16:17:49 by gpeyre            #+#    #+#             */
-/*   Updated: 2024/05/28 17:05:04 by gpeyre           ###   ########.fr       */
+/*   Updated: 2024/05/30 17:32:04 by gpeyre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Zombie
 {
 	private:
-	
+
 	std::string name;
 
 	public:
@@ -29,7 +29,7 @@ class Zombie
 	~Zombie();
 
 	void	announce(void);
-
+	void	setName(std::string new_name);
 };
 
 Zombie* zombieHorde( int N, std::string name );
