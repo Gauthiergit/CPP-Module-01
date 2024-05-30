@@ -12,8 +12,6 @@
 
 #include "Weapon.hpp"
 
-// Weapon::Weapon(void) : typer("") {}
-
 Weapon::Weapon(std::string new_type) : type(new_type) {}
 
 std::string const	&Weapon::getType(void)

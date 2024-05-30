@@ -25,7 +25,6 @@ class Weapon
 
     public:
 
-    // Weapon(void);
     Weapon(std::string new_type);
     ~Weapon();
 

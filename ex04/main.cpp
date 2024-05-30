@@ -6,7 +6,7 @@
 /*   By: gpeyre <gpeyre@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 11:20:03 by gpeyre            #+#    #+#             */
-/*   Updated: 2024/05/30 11:37:07 by gpeyre           ###   ########.fr       */
+/*   Updated: 2024/05/30 17:58:22 by gpeyre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,7 @@ int	main(int argc, char **argv)
 				pos += to_find.length();
 				prev_pos = pos;
 			}
-			if (pos < line.length())
-				new_string.append(line, prev_pos, line.length() - prev_pos);
+			new_string.append(line, prev_pos, line.length() - prev_pos);
 			outfile << new_string << std::endl;
 		}
 		else
