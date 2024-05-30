@@ -2,7 +2,7 @@
 NAME    	= horde
 
 # Compiler options
-CXX     = g++ 
+CXX     = c++ 
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
 
 DIR_OBJ = obj/

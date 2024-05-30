@@ -2,7 +2,7 @@
 NAME    	= replace
 
 # Compiler options
-CXX     = g++ 
+CXX     = c++ 
 CFLAGS  = -Wall -Wextra -Werror -std=c++98 -g
 
 DIR_OBJ = obj/

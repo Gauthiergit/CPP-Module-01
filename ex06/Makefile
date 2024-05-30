@@ -1,9 +1,9 @@
 # Program name
-NAME    	= brain
+NAME    	= harlFilter
 
 # Compiler options
 CXX     = c++ 
-CFLAGS  = -Wall -Wextra -Werror -std=c++98
+CFLAGS  = -Wall -Wextra -Werror -std=c++98 -g
 
 DIR_OBJ = obj/
 
@@ -15,16 +15,16 @@ BOLD = \033[1m
 GREEN = \033[92m
 BLUE = \033[94m
 
-SRCS  = main.cpp \
+SRCS  = main.cpp\
+		Harl.cpp
 
 OBJ = $(patsubst $(DIR_SRC)%.cpp,$(DIR_OBJ)%.o,$(SRCS))
 
 # Compiling project
 $(NAME): $(OBJ)
 		@echo "$(BOLD)$(BLUE)🛠️ 🚧     Compiling project...     🚧🛠️$(RESET_COLOR)"
-		@echo "\n"
 		@$(CXX) $(CFLAGS) -o $(NAME) $(OBJ)
-		@echo "$(BOLD)$(GREEN)🧟🧠   brain ready to use   🧠🧟$(RESET_COLOR)"
+		@echo "$(BOLD)$(GREEN)😠😡🤬    harlFilter ready to use    🤬😡😠$(RESET_COLOR)"
 
 $(DIR_OBJ):
 	@mkdir -p $(DIR_OBJ)
@@ -40,7 +40,6 @@ clean:
 
 fclean: clean
 		@rm -rf $(NAME)
-		@echo "\n"
 		@echo "$(BOLD)$(GREEN)🧹🧼     Cleaning finished     🧼🧹$(RESET_COLOR)"
 
 re: fclean all
